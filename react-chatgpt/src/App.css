@@ -1,0 +1,64 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.chat {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px; /* Add margin for spacing */
+  width: calc(100% - 40px); /* Adjust width to account for padding and margin */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  max-height: 80vh; /* Set the maximum height to 80% of the viewport height */
+  overflow-y: auto;
+}
+
+.user-message,
+.bot-message {
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #d3f4ff;
+  padding: 8px;
+}
+
+.bot-message {
+  background-color: #e0e0e0;
+  padding: 8px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column; /* Adjusted to column layout for better spacing */
+  gap: 10px;
+  max-width: 600px; /* Set a maximum width for larger screens */
+  width: calc(100% - 40px); /* Adjust width to account for padding and margin */
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
